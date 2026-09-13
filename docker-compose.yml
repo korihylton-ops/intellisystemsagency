@@ -1,0 +1,16 @@
+services:
+  site:
+    build: .
+    container_name: intellisystemsagency
+    restart: unless-stopped
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.intellisystemsagency.rule=Host(`intellisystemsagency.com`)"
+      - "traefik.http.routers.intellisystemsagency.entrypoints=websecure"
+      - "traefik.http.routers.intellisystemsagency.tls.certresolver=le"
+      - "traefik.http.services.intellisystemsagency.loadbalancer.server.port=80"
+networks:
+  traefik:
+    external: true
