@@ -81,10 +81,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.6em;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-    letter-spacing: 2.4px;
     color: var(--accent);
     margin-bottom: 24px;
   }
@@ -523,8 +521,8 @@
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-glow" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <span class="eyebrow">AI Automation &amp; AI-Search Visibility for Trade Businesses</span>
+    <div class="hero-inner" id="heroInner">
+      <span class="eyebrow">AI Automation, Web Design &amp; AI-Search Visibility for Local Businesses</span>
       <h1>More leads. More visibility.<br>More money, on autopilot.</h1>
       <p class="lede body-copy" style="max-width: 42rem;">We build the AI infrastructure that gets your business noticed, turns enquiries into booked jobs, and keeps replying even while you're on the tools — so more of what comes in turns into more money, automatically.</p>
       <div class="hero-actions">
@@ -532,6 +530,7 @@
         <a href="#services" class="btn btn-ghost">Explore Our Services</a>
       </div>
     </div>
+    <style>#heroInner > *{opacity:0;}</style>
     <div class="scroll-cue">
       <div class="line"></div>
       <div class="words"><span>Automate</span><span>Rank</span><span>Grow</span></div>
@@ -557,6 +556,9 @@
         <span>CONCRETE</span><span class="dash">—</span>
         <span>ELECTRICAL</span><span class="dash">—</span>
         <span>HVAC</span><span class="dash">—</span>
+        <span>HOSPITALITY</span><span class="dash">—</span>
+        <span>RETAIL</span><span class="dash">—</span>
+        <span>PET CARE</span><span class="dash">—</span>
       </div>
       <div class="marquee-keywords" aria-hidden="true">
         <span>AI AUTOMATION</span><span class="dash">—</span>
@@ -570,6 +572,9 @@
         <span>CONCRETE</span><span class="dash">—</span>
         <span>ELECTRICAL</span><span class="dash">—</span>
         <span>HVAC</span><span class="dash">—</span>
+        <span>HOSPITALITY</span><span class="dash">—</span>
+        <span>RETAIL</span><span class="dash">—</span>
+        <span>PET CARE</span><span class="dash">—</span>
       </div>
     </div>
   </section>
@@ -785,28 +790,43 @@
   <section id="audience" class="bg-alt pad">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">Built for the Trades</span>
+        <span class="eyebrow">Built for Local Businesses</span>
         <h2>Who We Work With</h2>
       </div>
       <div class="audience-grid reveal">
         <div class="audience-card">
           <h3>Concrete Contractors</h3>
           <p class="body-copy">From pour scheduling to progress claims, we automate the admin around the job so crews spend more time pouring and less time on paperwork.</p>
-          <a href="#contact" class="btn-text">Explore</a>
+          <a href="https://concrete.intellisystemsagency.com" target="_blank" class="btn-text">See Example Build</a>
         </div>
         <div class="audience-card">
           <h3>Electrical Contractors</h3>
           <p class="body-copy">Quoting, compliance certificates and job tracking — automated and connected in one system, so nothing gets lost between the office and the van.</p>
-          <a href="#contact" class="btn-text">Explore</a>
+          <a href="https://electrical.intellisystemsagency.com" target="_blank" class="btn-text">See Example Build</a>
         </div>
         <div class="audience-card">
           <h3>HVAC &amp; Mechanical</h3>
           <p class="body-copy">Service schedules, maintenance contracts and callouts kept in one place and followed up automatically — so repeat work doesn't fall through the cracks.</p>
-          <a href="#contact" class="btn-text">Explore</a>
+          <a href="https://hvac.intellisystemsagency.com" target="_blank" class="btn-text">See Example Build</a>
+        </div>
+        <div class="audience-card">
+          <h3>Restaurants &amp; Hospitality</h3>
+          <p class="body-copy">A booking flow that actually fills tables, a menu that's easy to update, and reviews that turn into repeat bookings instead of getting lost.</p>
+          <a href="https://food.intellisystemsagency.com" target="_blank" class="btn-text">See Example Build</a>
+        </div>
+        <div class="audience-card">
+          <h3>Retail &amp; Jewellery</h3>
+          <p class="body-copy">A site built to sell — collections that photograph well, a consult-booking flow for bespoke work, and enquiries that don't sit unanswered.</p>
+          <a href="https://jewellery.intellisystemsagency.com" target="_blank" class="btn-text">See Example Build</a>
+        </div>
+        <div class="audience-card">
+          <h3>Pet Care &amp; Grooming</h3>
+          <p class="body-copy">Online booking that fills the calendar automatically, and a system that remembers every pet's history without a whiteboard behind the counter.</p>
+          <a href="https://pets.intellisystemsagency.com" target="_blank" class="btn-text">See Example Build</a>
         </div>
       </div>
       <div class="audience-close reveal">
-        <a href="#contact" class="btn-text">Don't see your trade? Get in touch anyway</a>
+        <a href="#contact" class="btn-text">Don't see your industry? Get in touch anyway</a>
       </div>
     </div>
   </section>
@@ -932,34 +952,61 @@
       <div class="section-head reveal">
         <span class="eyebrow">Proof of Work</span>
         <h2>See What Gets Built</h2>
-        <p class="body-copy" style="max-width:46rem;margin-top:14px;">Example builds across your target trades — full site, admin dashboard and booking system, live and clickable. Real client work is added here as it ships.</p>
+        <p class="body-copy" style="max-width:46rem;margin-top:14px;">Six industries, six genuinely different builds — not one template recoloured six times. Each is a full site with its own admin dashboard and booking system, live and clickable. Real client work is added here as it ships.</p>
       </div>
       <div class="portfolio-grid reveal">
-        <a href="https://concrete.intellisystemsagency.com" target="_blank" class="portfolio-card">
+        <a href="https://concrete.intellisystemsagency.com" target="_blank" class="portfolio-card" style="--tag:#ff5722;">
           <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=70" alt="Ironpour Concrete example site" loading="lazy">
           <div class="portfolio-card-body">
             <span class="division-label">Concrete</span>
             <h4>Ironpour Concrete</h4>
             <p>Driveways, slabs &amp; commercial pours — quote form, gallery, admin dashboard.</p>
-            <span class="btn-text">View Site &rarr;</span>
+            <span class="btn-text">View Site</span>
           </div>
         </a>
-        <a href="https://electrical.intellisystemsagency.com" target="_blank" class="portfolio-card">
+        <a href="https://electrical.intellisystemsagency.com" target="_blank" class="portfolio-card" style="--tag:#ffb100;">
           <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=700&q=70" alt="Voltline Electrical example site" loading="lazy">
           <div class="portfolio-card-body">
             <span class="division-label">Electrical</span>
             <h4>Voltline Electrical</h4>
             <p>Switchboards, solar &amp; call-outs — booking flow, service pricing, admin dashboard.</p>
-            <span class="btn-text">View Site &rarr;</span>
+            <span class="btn-text">View Site</span>
           </div>
         </a>
-        <a href="https://hvac.intellisystemsagency.com" target="_blank" class="portfolio-card">
+        <a href="https://hvac.intellisystemsagency.com" target="_blank" class="portfolio-card" style="--tag:#00b3a4;">
           <img src="https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?w=700&q=70" alt="Coreheat HVAC example site" loading="lazy">
           <div class="portfolio-card-body">
             <span class="division-label">HVAC</span>
             <h4>Coreheat HVAC</h4>
             <p>Split systems &amp; commercial servicing — quote form, service plans, admin dashboard.</p>
-            <span class="btn-text">View Site &rarr;</span>
+            <span class="btn-text">View Site</span>
+          </div>
+        </a>
+        <a href="https://food.intellisystemsagency.com" target="_blank" class="portfolio-card" style="--tag:#c1552c;">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=70" alt="Salt & Ember example site" loading="lazy">
+          <div class="portfolio-card-body">
+            <span class="division-label">Restaurant</span>
+            <h4>Salt &amp; Ember</h4>
+            <p>Modern bistro — tabbed menu, table reservations, magazine-style design.</p>
+            <span class="btn-text">View Site</span>
+          </div>
+        </a>
+        <a href="https://jewellery.intellisystemsagency.com" target="_blank" class="portfolio-card" style="--tag:#a8863f;">
+          <img src="https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=700&q=70" alt="Aurelia example site" loading="lazy">
+          <div class="portfolio-card-body">
+            <span class="division-label">Jewellery</span>
+            <h4>Aurelia</h4>
+            <p>Fine jewellery boutique — collections, bespoke consult booking, editorial design.</p>
+            <span class="btn-text">View Site</span>
+          </div>
+        </a>
+        <a href="https://pets.intellisystemsagency.com" target="_blank" class="portfolio-card" style="--tag:#ff7a59;">
+          <img src="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?w=700&q=70" alt="Wagtail Grooming Co example site" loading="lazy">
+          <div class="portfolio-card-body">
+            <span class="division-label">Pet Care</span>
+            <h4>Wagtail Grooming Co.</h4>
+            <p>Dog &amp; cat grooming — online booking, playful design, admin dashboard.</p>
+            <span class="btn-text">View Site</span>
           </div>
         </a>
       </div>
@@ -970,13 +1017,15 @@
   <style>
     .portfolio-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px;}
     @media (min-width:780px){.portfolio-grid{grid-template-columns:repeat(3,1fr);}}
-    .portfolio-card{display:flex;flex-direction:column;background:var(--black);text-decoration:none;color:inherit;transition:background .3s ease;}
+    .portfolio-card{display:flex;flex-direction:column;background:var(--black);text-decoration:none;color:inherit;transition:background .3s ease;border-top:3px solid var(--tag);}
     .portfolio-card:hover{background:var(--black-alt);}
+    .portfolio-card:hover .btn-text{color:var(--tag);border-color:var(--tag);}
     .portfolio-card img{width:100%;height:180px;object-fit:cover;display:block;}
     .portfolio-card-body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:8px;}
+    .portfolio-card-body .division-label{color:var(--tag);}
     .portfolio-card-body h4{font-size:17px;font-weight:600;letter-spacing:-0.1px;}
     .portfolio-card-body p{font-size:14.5px;color:var(--tertiary);max-width:none;}
-    .portfolio-card-body .btn-text{margin-top:10px;align-self:flex-start;}
+    .portfolio-card-body .btn-text{margin-top:10px;align-self:flex-start;transition:color .2s,border-color .2s;}
   </style>
 
   <!-- DIFFERENTIATORS -->
@@ -1239,6 +1288,15 @@
         });
     });
   })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script>
+  // One deliberate load-in moment for the hero — the rest of the page keeps its existing scroll-reveal system
+  if (typeof Motion !== 'undefined') {
+    Motion.animate('#heroInner > *', { opacity: [0, 1], y: [18, 0] }, { delay: Motion.stagger(0.12), duration: 0.8, easing: 'ease-out' });
+  }
+  setTimeout(() => document.querySelectorAll('#heroInner > *').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; }), 2000);
 </script>
 
 </body>
