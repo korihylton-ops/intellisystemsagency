@@ -14,7 +14,7 @@
   /* ================= RESET ================= */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  #services, #audience, #pricing, #faq, #contact { scroll-margin-top: 100px; }
+  #services, #audience, #portfolio, #pricing, #faq, #contact { scroll-margin-top: 100px; }
   img, svg { display: block; max-width: 100%; }
   a { color: inherit; text-decoration: none; }
   ul { list-style: none; }
@@ -506,6 +506,7 @@
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#audience">Who We Help</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
@@ -925,15 +926,58 @@
     </div>
   </section>
 
-  <!-- CASE STUDIES TEASER -->
-  <section class="bg-alt pad">
-    <div class="container teaser-inner reveal">
-      <span class="eyebrow">Proof of Work</span>
-      <h2>See What Gets Built</h2>
-      <p class="body-copy">We're building our public case-study library as we take on our first Australian clients — reach out and we'll walk you through recent builds directly.</p>
-      <a href="#contact" class="btn btn-solid">See Recent Work</a>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="bg-alt pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Proof of Work</span>
+        <h2>See What Gets Built</h2>
+        <p class="body-copy" style="max-width:46rem;margin-top:14px;">Example builds across your target trades — full site, admin dashboard and booking system, live and clickable. Real client work is added here as it ships.</p>
+      </div>
+      <div class="portfolio-grid reveal">
+        <a href="https://concrete.intellisystemsagency.com" target="_blank" class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=70" alt="Ironpour Concrete example site" loading="lazy">
+          <div class="portfolio-card-body">
+            <span class="division-label">Concrete</span>
+            <h4>Ironpour Concrete</h4>
+            <p>Driveways, slabs &amp; commercial pours — quote form, gallery, admin dashboard.</p>
+            <span class="btn-text">View Site &rarr;</span>
+          </div>
+        </a>
+        <a href="https://electrical.intellisystemsagency.com" target="_blank" class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=700&q=70" alt="Voltline Electrical example site" loading="lazy">
+          <div class="portfolio-card-body">
+            <span class="division-label">Electrical</span>
+            <h4>Voltline Electrical</h4>
+            <p>Switchboards, solar &amp; call-outs — booking flow, service pricing, admin dashboard.</p>
+            <span class="btn-text">View Site &rarr;</span>
+          </div>
+        </a>
+        <a href="https://hvac.intellisystemsagency.com" target="_blank" class="portfolio-card">
+          <img src="https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?w=700&q=70" alt="Coreheat HVAC example site" loading="lazy">
+          <div class="portfolio-card-body">
+            <span class="division-label">HVAC</span>
+            <h4>Coreheat HVAC</h4>
+            <p>Split systems &amp; commercial servicing — quote form, service plans, admin dashboard.</p>
+            <span class="btn-text">View Site &rarr;</span>
+          </div>
+        </a>
+      </div>
+      <p style="font-size:12.5px;color:var(--tertiary);margin-top:24px;">Example builds shown to demonstrate the finished product — not existing client accounts.</p>
     </div>
   </section>
+
+  <style>
+    .portfolio-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px;}
+    @media (min-width:780px){.portfolio-grid{grid-template-columns:repeat(3,1fr);}}
+    .portfolio-card{display:flex;flex-direction:column;background:var(--black);text-decoration:none;color:inherit;transition:background .3s ease;}
+    .portfolio-card:hover{background:var(--black-alt);}
+    .portfolio-card img{width:100%;height:180px;object-fit:cover;display:block;}
+    .portfolio-card-body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:8px;}
+    .portfolio-card-body h4{font-size:17px;font-weight:600;letter-spacing:-0.1px;}
+    .portfolio-card-body p{font-size:14.5px;color:var(--tertiary);max-width:none;}
+    .portfolio-card-body .btn-text{margin-top:10px;align-self:flex-start;}
+  </style>
 
   <!-- DIFFERENTIATORS -->
   <section class="bg-black pad">
